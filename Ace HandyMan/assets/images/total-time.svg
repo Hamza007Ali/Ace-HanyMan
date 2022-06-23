@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #25aebf;
+      }
+    </style>
+  </defs>
+  <path id="Icon_material-timelapse" data-name="Icon material-timelapse" class="cls-1" d="M20.8,10.2A7.468,7.468,0,0,0,15.5,8v7.5l-5.3,5.3A7.5,7.5,0,1,0,20.8,10.2ZM15.5,3A12.5,12.5,0,1,0,28,15.5,12.5,12.5,0,0,0,15.5,3Zm0,22.5a10,10,0,1,1,10-10A10,10,0,0,1,15.5,25.5Z" transform="translate(-3 -3)"/>
+</svg>

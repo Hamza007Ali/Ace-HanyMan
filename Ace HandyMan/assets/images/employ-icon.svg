@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d40029;
+      }
+    </style>
+  </defs>
+  <path id="Icon_material-dashboard" data-name="Icon material-dashboard" class="cls-1" d="M0,6.111H4.889V0H0ZM0,11H4.889V7.333H0Zm6.111,0H11V4.889H6.111Zm0-11V3.667H11V0Z"/>
+</svg>

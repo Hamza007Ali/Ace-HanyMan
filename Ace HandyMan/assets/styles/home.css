@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+.text-blue {
+  color: #25aebf !important;
+  font-weight: bold;
+}
+.text-purple {
+  color: #6f7bf7 !important;
+  font-weight: bold;
+}
+.user {
+  width: 28px;
+}
+nav .user-img {
+  background-image: url(../images/user.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 26px;
+}
+nav ul {
+  padding-left: 50px !important;
+}
+.btn-spacing {
+  margin-right: 24px;
+  padding-right: 25px;
+}
+.dropdown {
+  position: relative;
+  left: 12px !important;
+  bottom: 2px !important;
+}
+.dropdown-menu {
+  position: absolute !important;
+  top: 62% !important;
+  left: -43px !important;
+  z-index: 1000;
+  display: none;
+  min-width: 9rem !important;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  transform: translate3d(-89px, 20px, 0px) !important;
+}
+.border-bottom {
+  border-bottom: 2px solid #e0e1e1 !important;
+}
+/* ------------------------------------------------ DashBord Main ----------------------------------- */
+
+.dashbord-corner {
+  border: 2px solid #e0e1e1 !important;
+  border-radius: 10px !important;
+}
+.border-color {
+  border: 1px solid #e0e1e1 !important;
+}
+.input-width {
+  width: 10%;
+  outline: none !important;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 4.255em !important;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+.dropdown-menu-cus {
+  position: absolute !important;
+  top: 98px !important;
+  left: -4px !important;
+  top: 6px !important;
+  min-width: 7rem !important;
+}
+.long-input {
+  width: 64%;
+}
+.dropdown-menu a:hover {
+  color: #d40029 !important;
+  font-weight: 600;
+}
+/* --------------------------------------------- catogory section --------------------------------- */
+.scroll {
+  overflow: scroll;
+}
+.category-width-btn {
+  width: 32%;
+  margin-left: 7px;
+}
+.icon-w {
+  width: 20px;
+}
+.w-cus {
+  width: 80%;
+}
+.sub-width {
+  width: 100px;
+}
+.cm-padding {
+  padding-left: 30px !important;
+}
+.quality-padding {
+  padding-left: 20px;
+}
+.table thead th {
+  border-bottom: unset !important;
+}
+.table {
+  margin-bottom: 0px !important;
+}
+.bg-light-green {
+  background-color: #acdbc5;
+}
+.bg-light-pink {
+  background-color: #ecafba;
+}
+.bg-light-blue {
+  background-color: #b6e0e5;
+}
+.table-input {
+  width: 50px;
+  border: none;
+  font-size: 14px;
+  background: transparent !important;
+  text-align: center;
+}
+.table-doller-width {
+  width: 94px;
+  border: none;
+  text-align: center;
+  background: transparent !important;
+}
+.table-button-padding-minus {
+  padding: 9px 6px !important;
+}
+.table-button-padding-plus {
+  padding: 6px 6px !important;
+}
+.table-button-padding-pen {
+  padding: 6px 6px !important;
+}
+.table-button-padding-bin {
+  padding: 5px 6px !important;
+}
+.table-button-padding-mark {
+  padding: 5px 6px !important;
+}
+.table > :not(caption) > * > * {
+  padding: 16px 34px 10px 16px !important;
+}
+.scnd-row {
+  border-color: inherit;
+  border-style: unset !important;
+  border-width: 0;
+  border-bottom: transparent;
+}
+.scnd-row:hover {
+  background-color: #e6e6e7;
+}
+.table tbody tr:hover,
+.table-input:hover {
+  background-color: #e6e6e7;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.dog-names {
+  outline: none !important;
+}
+
+/* ----------------------------------- scroll Desiging ------------------------------------------------ */
+
+.scrollbar {
+  height: 300px !important;
+  background: #f5f5f5;
+  overflow-y: scroll;
+}
+.force-overflow {
+  min-height: 100%;
+}
+#style-1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #e6e6e7;
+  background-color: #f5f5f5;
+}
+
+#style-1::-webkit-scrollbar {
+  width: 8px;
+  background-color: #e6e6e7;
+}
+#style-1::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px #e6e6e7;
+  background-color: #e6e6e7;
+}
+
+/* ------------------------------------------------- new scroll bar -------------------------------------- */
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

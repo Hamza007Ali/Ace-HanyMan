@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View History</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/styles/viewhistory.css" />
+    <link rel="stylesheet" href="assets/styles/commonclasses.css" />
+    <link rel="stylesheet" href="assets/styles/home.css" />
+  </head>
+  <body>
+    <!-- --------------------------------------------Header Navigation Section --------------------------- -->
+    <nav
+      class="header-main d-flex align-items-center container-custom justify-content-between"
+    >
+      <div class="d-flex align-items-center">
+        <div class="pointer header-logo">
+          <img src="assets/images/sitelogo.png" />
+        </div>
+        <ul class="d-flex mb-0 pl-5">       
+        <li class="border-outer list-unstyled mr-3">
+        <div class="list-inner d-flex">
+          <div>
+            <img class="emply gray-icon" src="assets/images/employ-icon-gray.svg" />
+          </div>
+          <a href="./index.html" class="fw-bold pointer ml-2 text-size-fourteen font-color-gray text-decoration-none mt-1">Employee
+            Dashboard</a>
+        </div>
+      </li>
+      <li class="border-outer list-unstyled mr-3">
+        <div class="list-inner active d-flex">
+          <div>
+            <img class="history" src="assets/images/RED-ICON.svg" />
+          </div>
+          <a  class="pointer ml-2 text-size-fourteen text-red text-decoration-none mt-1"
+          >View History</a
+              >
+        </div>
+      </li>
+        </ul>
+      </div>
+      <div class="ml-3  d-flex">
+        <button
+          class="text-size-fourteen border-0 bg-transparent fw-bold chng-pswrd-btn summry-btn"
+        >
+          Change Password
+        </button>
+        <button
+          class="save-btn text-white p-2 rounded border-0 bg-red text-size-fourteen ml-2 d-flex align-items-center"
+        >
+          <img src="assets/images/logout.svg" />
+          <span class="ml-2 text-size-fourteen">Logout</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ------------------------------------------ Hero Section ------------------------------------------- -->
+
+     <div class="main-bg-color">
+       <div class="container-custom">
+    <div class="py-4 height-cus">
+      <div class="rounded dashbord-corner  mx-0">
+        <div class="main-dashbord d-flex p-3 border-bottom justify-content-center">
+            <div class="input-group flex-nowrap w-25">
+              <input
+                type="text"
+                class="form-control main-bg-color py-3 px-1 mb-0 rounded border border-2 border-color text-size-twelve font-color-gray"
+                placeholder="Start typing Job# or Client Name"
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="d-flex justify-content-between">
+              <table class="table">
+                <thead class="bg-catory">
+                  <tr>
+                    <th class="text-size-fourteen pl-3" scope="col">Job Name</th>
+                    <th class="text-size-fourteen" scope="col">Summary</th>
+                    <th class="text-size-fourteen" scope="col">Date</th>
+                    <th class="text-size-fourteen cm-padding" scope="col">
+                        Created by
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row" class="font-color-gray text-size-fourteen">
+                        Ali
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                        WO #: 50/90 None	
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                         2021-12-27
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                        Employee
+                      </td>
+                  </tr>
+                  <tr class="scnd-row">
+                    <td scope="row" class="font-color-gray text-size-fourteen">
+                        Attic
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                        2022-01-10
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_21" data-name="Group 21" transform="translate(-291 -542)">
+    <path id="Path_8" data-name="Path 8" class="cls-1" d="M0,16V0H16V16Z" transform="translate(291 542)"/>
+    <path id="Icon_metro-exit" data-name="Icon metro-exit" class="cls-2" d="M12.807,10.458V8.752H8.542V7.046h4.265V5.34L15.366,7.9ZM11.954,9.6v3.412H7.689v2.559L2.571,13.017V1.928h9.383V6.193H11.1V2.781H4.277L7.689,4.487v7.677H11.1V9.6Z" transform="translate(290.027 541.67)"/>
+  </g>
+</svg>

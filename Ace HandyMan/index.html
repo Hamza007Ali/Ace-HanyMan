@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ace HandyMan</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/styles/home.css" />
+    <link rel="stylesheet" href="assets/styles/commonclasses.css" />
+  </head>
+  <body>
+    <!-- ------------------------------------------------Header section ----------------------------------- -->
+    <nav class="header-main d-flex align-items-center container-custom">
+      <div class="pointer header-logo">
+        <img src="assets/images/sitelogo.png" />
+      </div>
+      <ul class="d-flex mb-0 header-list-padding">
+        <li class="border-outer list-unstyled mr-3">
+          <div class="list-inner active d-flex">
+            <div>
+              <img class="emply" src="assets/images/employ-icon.svg" />
+            </div>
+            <a
+              class="pointer ml-2 text-size-fourteen text-red text-decoration-none mt-1"
+              >Employee Dashboard</a
+            >
+          </div>
+        </li>
+        <li class="border-outer list-unstyled mr-3">
+          <div class="list-inner d-flex">
+            <div>
+              <img class="history" src="assets/images/history-icon.svg" />
+            </div>
+            <a
+              href="./viewhistory.html"
+              class="pointer ml-2 text-size-fourteen text-color-gray text-decoration-none mt-1"
+              >View History</a
+            >
+          </div>
+        </li>
+        <li class="d-flex mr-3 align-items-center">
+          <img class="time" src="assets/images/total-time.svg" />
+          <a class="pointer ml-2 text-size-fourteen text-blue"
+            >Total Time: <span class="text-dark">5-12 hrs</span>
+          </a>
+        </li>
+        <li class="d-flex mr-3 align-items-center">
+          <img class="time" src="assets/images/price-icon.svg" />
+          <a class="pointer ml-2 text-size-fourteen text-purple"
+            >Total Price: <span class="text-dark">$425 - 1020</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="border-right ml-3 btn-spacing">
+        <button
+          class="summry-btn text-white p-2 rounded border-0 bg-blue bg-blue text-size-eleven"
+        >
+          View Summary
+        </button>
+        <button
+          class="save-btn text-white p-2 rounded border-0 bg-green text-size-eleven ml-2"
+        >
+          Save Job
+        </button>
+      </div>
+
+      <div class="user">
+        <div class="user-img pointer"></div>
+      </div>
+      <div>
+        <h6 class="mb-0 text-size-fourteen ml-4">Brianmcmahon</h6>
+      </div>
+      <!-- ----------------------------------header dropdown --------------------------------------- -->
+
+      <div class="dropdown show">
+        <img
+          class="dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          class="ml-2 pointer"
+          src="./assets/images/dropdown.svg"
+        />
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a
+            class="dropdown-item border-bottom border-2 text-size-fourteen"
+            href="#"
+            >change password</a
+          >
+          <a class="dropdown-item Logout text-size-fourteen" href="#">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ---------------------------------- main Dashbord Section --------------------------------------- -->
+
+    <div class="main-bg-color py-3">
+      <div class="main-bg-color vh-100 container-custom">
+        <div class="rounded dashbord-corner container-custom mx-0">
+          <div class="main-dashbord d-flex p-3 border-bottom">
+            <div class="input-width">
+              <h6 class="text-size-fourteen">Customer Name</h6>
+              <div class="rounded border border-2 border-color">
+                <p class="py-2 px-1 text-size-fourteen mb-0 font-color-gray">
+                  Employee_2
+                </p>
+              </div>
+            </div>
+            <div class="mx-4 input-width">
+              <h6 class="text-size-fourteen">Service Charges</h6>
+
+              <select
+                name="dog-names"
+                id="dog-names"
+                class="rounded border border-2 border-color px-1 py-2 text-size-fourteen main-bg-color font-color-gray w-100 outline-none pointer"
+              >
+                <option
+                  value="rigatoni"
+                  class="text-size-twelve font-color-gray p-2 pointer"
+                >
+                  YES
+                </option>
+                <option value="dave font-color-gray p-2 pointer">20$</option>
+                <option value="pumpernickel font-color-gray p-2 pointer ">
+                  50$
+                </option>
+              </select>
+            </div>
+            <div class="input-width">
+              <h6 class="text-size-fourteen">Discount</h6>
+
+              <select
+                name="dog-names"
+                id="dog-names"
+                class="rounded border border-2 border-color px-1 py-2 text-size-fourteen main-bg-color font-color-gray w-100 outline-none pointer"
+              >
+                <option
+                  value="rigatoni"
+                  class="text-size-fourteen font-color-gray pointer"
+                >
+                  None
+                </option>
+                <option value="dave font-color-gray pointer ">40$</option>
+                <option value="pumpernickel font-color-gray  pointer">
+                  60$
+                </option>
+              </select>
+            </div>
+            <div class="ml-4 long-input">
+              <h6 class="text-size-fourteen">Private Notes</h6>
+
+              <div class="input-group flex-nowrap">
+                <input
+                  type="text"
+                  class="form-control main-bg-color py-3 px-1 text-size-fourteen mb-0 rounded border border-2 border-color w-100"
+                  placeholder="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt erat, sed diam voluptua…."
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------------------- catgory section ----------------------------------------- -->
+
+          <div
+            class="d-flex px-3 py-3 justify-content-space-between align-items-center w-100"
+          >
+            <div class="d-flex align-items-center w-100">
+              <div class="icon-w">
+                <img src="assets/images/icon-catogory.svg" />
+              </div>
+              <div>
+                <h6 class="mb-0 mx-2 font-color-gray text-size-fourteen mt-1">
+                  Category
+                </h6>
+              </div>
+              <div class="w-cus">
+                <select
+                  name="dog-names"
+                  id="category"
+                  class="rounded border border-2 border-color px-1 py-2 text-size-fourteen main-bg-color yes font-color-gray w-100 outline-none pointer"
+                >
+                  <option
+                    class="text-size-twelve font-color-gray pointer"
+                    value=""
+                  >
+                    Category
+                  </option>
+                  <option
+                    class="dave font-color-gray pointer"
+                    value="Sub Category"
+                  >
+                    Sub Category
+                  </option>
+                  <option
+                    class="pumpernickel font-color-gray pointer"
+                    value="Hourly Rate"
+                  >
+                    Hourly Rate
+                  </option>
+                  <option
+                    class="pumpernickel font-color-gray pointer"
+                    value=" # of CM"
+                  >
+                    # of CM
+                  </option>
+                  <option
+                    class="pumpernickel font-color-gray pointer"
+                    value="Quantity"
+                  >
+                    Quantity
+                  </option>
+                  <option
+                    class="pumpernickel font-color-gray pointer"
+                    value="Hourly Rate"
+                  >
+                    Hourly Rate
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex align-items-center w-100 mx-2">
+              <div class="icon-w">
+                <img src="assets/images/icon-catogory.svg" />
+              </div>
+              <div>
+                <h6
+                  class="mb-0 ml-2 sub-width font-color-gray text-size-fourteen mt-1"
+                >
+                  Sub Category
+                </h6>
+              </div>
+              <div class="w-cus">
+                <select
+                  name="dog-names"
+                  class="rounded border border-2 border-color px-1 py-2 text-size-fourteen main-bg-color yes font-color-gray w-100 outline-none pointer"
+                  id="sub_category"
+                >
+                  <option
+                    class="text-size-twelve font-color-gray pointer"
+                    value=""
+                  >
+                    Select Sub Category
+                  </option>
+                  <option
+                    class="text-size-twelve font-color-gray pointer"
+                    value="Bifold Doors - Replace"
+                  >
+                    Bifold Doors - Replace
+                  </option>
+                  <option
+                    class="dave font-color-gray pointer"
+                    value=" Attic Stairs - Remove & Replace"
+                  >
+                    Attic Stairs - Remove & Replace
+                  </option>
+                  <option
+                    class="pumpernickel font-color-gray pointer"
+                    value="New Caulk - Bathtub w/Shower"
+                  >
+                    New Caulk - Bathtub w/Shower
+                  </option>
+                  <option
+                    class="pumpernickel font-color-gray pointer"
+                    value="GFCI - Replace"
+                  >
+                    GFCI - Replace
+                  </option>
+                  <option
+                    class="pumpernickel font-color-gray pointer"
+                    value="New Caulk - Bathtub Perimeter"
+                  >
+                    New Caulk - Bathtub Perimeter
+                  </option>
+                  <option
+                    class="pumpernickel font-color-gray pointer"
+                    value=" Attic Stairs - Install [New]"
+                  >
+                    Attic Stairs - Install [New]
+                  </option>
+                </select>
+              </div>
+            </div>
+            <!-- ----------------------------------------------- Model Section ---------------------------- -->
+            <!-- Modal -->
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary d-none"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              id="popup"
+            >
+             
+            </button>
+
+            <!-- Modal -->
+           <div class="d-flex align-items-center">            
+             <div
+              class="modal fade "
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Select Category
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-center">Select category and sub-category</div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn summry-btn text-white p-2 rounded border-0 bg-blue bg-blue text-size-fourteen"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- end -->
+            <div class="category-width-btn">
+              <button
+                class="btn summry-btn text-white p-2 rounded border-0 bg-blue bg-blue text-size-eleven"
+                type="button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                onclick="AddNewRow()"
+                id="popup"
+              >
+                Add Job
+              </button>
+              <button
+                class="save-btn text-white p-2 rounded border-0 bg-green text-size-eleven ml-2"
+              >
+                Create New Job
+              </button>
+            </div>
+          </div>
+          <!-- ------------------------------------- catogory Heading ------------------------------------- -->
+
+          <div class="scrollbar" id="style-1">
+            <div class="d-flex justify-content-between force-overflow">
+              <table class="table" id="mytable">
+                <thead class="bg-catory">
+                  <tr style="overflow-y: hidden">
+                    <th class="text-size-fourteen pl-3" scope="col">
+                      Category
+                    </th>
+                    <th class="text-size-fourteen" scope="col">Sub Category</th>
+                    <th class="text-size-fourteen" scope="col">Hourly Rate</th>
+                    <th
+                      class="text-size-fourteen cm-padding text-center"
+                      scope="col"
+                    >
+                      # of CM
+                    </th>
+                    <th
+                      class="text-size-fourteen quality-padding text-center"
+                      scope="col"
+                    >
+                      Quantity
+                    </th>
+                    <th class="text-size-fourteen text-center" scope="col">
+                      Time
+                    </th>
+                    <th class="text-size-fourteen" scope="col">Price</th>
+                    <th class="text-size-fourteen" scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                  <tr id="rowid">
+                    <td
+                      scope="row"
+                      class="font-color-gray text-size-fourteen"
+                      id="demo"
+                    >
+                      Doors
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      Bifold Doors - Replace
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $85
+                      <img
+                        class="table-button-padding-pen bg-light-green rounded pointer summry-btn ml-2 mb-1"
+                        src="assets/images/pen.svg"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn m2-1"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement1')"
+                      />
+                      <input
+                        class="table-input main-bg-color outline-none outline-none"
+                        type="number"
+                        placeholder="1"
+                        id="cm-incement-decrement1"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement1')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement2')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="0"
+                        id="cm-incement-decrement2"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement2')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                      />
+                      <input
+                        class="table-doller-width main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="2.5 - 3 hrs"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                      />
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $212.5 - $255
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-bin bg-red rounded pointer summry-btn"
+                        src="assets/images/bin.svg"
+                        onclick="deleteRow('rowid')"
+                      />
+                      <img
+                        class="table-button-padding-mark bg-green rounded pointer summry-btn ml-1"
+                        src="assets/images/mark.svg"
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- -----------------------------------------two -------------------------------------- -->
+
+                  <tr id="rowid">
+                    <td scope="row" class="font-color-gray text-size-fourteen">
+                      Attic
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      Attic Stairs - Remove & Replace
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $85
+                      <img
+                        class="table-button-padding-pen bg-light-green rounded pointer summry-btn ml-2 mb-1"
+                        src="assets/images/pen.svg"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement3')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="1"
+                        id="cm-incement-decrement3"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement3')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement5')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="0"
+                        id="cm-incement-decrement5"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement5')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                      />
+                      <input
+                        class="table-doller-width main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="3 - 5 hrs"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                      />
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      3 - 5 hrs
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-bin bg-red rounded pointer summry-btn"
+                        src="assets/images/bin.svg"
+                        onclick="deleteRow('rowid')"
+                      />
+                      <img
+                        class="table-button-padding-mark bg-green rounded pointer summry-btn ml-1"
+                        src="assets/images/mark.svg"
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- -----------------------------------------three-------------------------------------- -->
+
+                  <tr id="rowid">
+                    <td scope="row" class="font-color-gray text-size-fourteen">
+                      Caulking
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      New Caulk - Bathtub w/Shower
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $85
+                      <img
+                        class="table-button-padding-pen bg-light-green rounded pointer summry-btn ml-2 mb-1"
+                        src="assets/images/pen.svg"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement7')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="1"
+                        id="cm-incement-decrement7"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement7')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement8')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="0"
+                        id="cm-incement-decrement8"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement8')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                      />
+                      <input
+                        class="table-doller-width main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="2 - 3 hrs"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                      />
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $170 - $255
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-bin bg-red rounded pointer summry-btn"
+                        src="assets/images/bin.svg"
+                        onclick="deleteRow('rowid')"
+                      />
+                      <img
+                        class="table-button-padding-mark bg-green rounded pointer summry-btn ml-1"
+                        src="assets/images/mark.svg"
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- -----------------------------------------four -------------------------------------- -->
+
+                  <tr id="rowid">
+                    <td scope="row" class="font-color-gray text-size-fourteen">
+                      Electrical
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      GFCI - Replace
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $85
+                      <img
+                        class="table-button-padding-pen bg-light-green rounded pointer summry-btn ml-2 mb-1"
+                        src="assets/images/pen.svg"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement10')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="1"
+                        id="cm-incement-decrement10"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement10')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement11')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="0"
+                        id="cm-incement-decrement11"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement11')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                      />
+                      <input
+                        class="table-doller-width main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="0.5 - 1 hrs"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                      />
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $42.5 - $85
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-bin bg-red rounded pointer summry-btn"
+                        src="assets/images/bin.svg"
+                        onclick="deleteRow('rowid')"
+                      />
+                      <img
+                        class="table-button-padding-mark bg-green rounded pointer summry-btn ml-1"
+                        src="assets/images/mark.svg"
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- -----------------------------------------five -------------------------------------- -->
+
+                  <tr id="rowid">
+                    <td scope="row" class="font-color-gray text-size-fourteen">
+                      GFCI - Replace
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      New Caulk - Bathtub Perimeter
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $85
+                      <img
+                        class="table-button-padding-pen bg-light-green rounded pointer summry-btn ml-2 mb-1"
+                        src="assets/images/pen.svg"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement13')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="1"
+                        id="cm-incement-decrement13"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement13')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement14')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="0"
+                        id="cm-incement-decrement14"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement14')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                      />
+                      <input
+                        class="table-doller-width main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="1 - 2 hrs"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                      />
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $85 - $170
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-bin bg-red rounded pointer summry-btn"
+                        src="assets/images/bin.svg"
+                        onclick="deleteRow('rowid')"
+                      />
+                      <img
+                        class="table-button-padding-mark bg-green rounded pointer summry-btn ml-1"
+                        src="assets/images/mark.svg"
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- -----------------------------------------six -------------------------------------- -->
+
+                  <tr id="rowid">
+                    <td scope="row" class="font-color-gray text-size-fourteen">
+                      Attic
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      Attic Stairs - Install [New]
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $85
+                      <img
+                        class="table-button-padding-pen bg-light-green rounded pointer summry-btn ml-2 mb-1"
+                        src="assets/images/pen.svg"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement16')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="1"
+                        id="cm-incement-decrement16"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="decrement('cm-incement-decrement16')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement17')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="0"
+                        id="cm-incement-decrement17"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement17')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                      />
+                      <input
+                        class="table-doller-width main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="$85 - $110"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                      />
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $510 - $680
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-bin bg-red rounded pointer summry-btn"
+                        src="assets/images/bin.svg"
+                        onclick="deleteRow('rowid')"
+                      />
+                      <img
+                        class="table-button-padding-mark bg-green rounded pointer summry-btn ml-1"
+                        src="assets/images/mark.svg"
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- -----------------------------------------seven -------------------------------------- -->
+
+                  <tr class="scnd-row" id="rowid">
+                    <td scope="row" class="font-color-gray text-size-fourteen">
+                      Doors
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      Bifold Doors - Replace
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $85
+                      <img
+                        class="table-button-padding-pen bg-light-green rounded pointer summry-btn ml-2 mb-1"
+                        src="assets/images/pen.svg"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement19')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="1"
+                        id="cm-incement-decrement19"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement19')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                        onclick="decrement('cm-incement-decrement20')"
+                      />
+                      <input
+                        class="table-input main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="0"
+                        id="cm-incement-decrement20"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                        onclick="increment('cm-incement-decrement20')"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-minus bg-light-pink rounded pointer summry-btn"
+                        src="assets/images/minus.svg"
+                      />
+                      <input
+                        class="table-doller-width main-bg-color text-size-fourteen outline-none"
+                        type="number"
+                        placeholder="2.5 - 3 hrs"
+                        min="0"
+                        max="100000"
+                      />
+                      <img
+                        class="table-button-padding-plus bg-light-blue rounded pointer summry-btn"
+                        src="assets/images/plus.svg"
+                      />
+                    </td>
+                    <td class="font-color-gray text-size-fourteen">
+                      $212.5 - $255
+                    </td>
+                    <td>
+                      <img
+                        class="table-button-padding-bin bg-red rounded pointer summry-btn"
+                        src="assets/images/bin.svg"
+                        onclick="deleteRow('rowid')"
+                      />
+                      <img
+                        class="table-button-padding-mark bg-green rounded pointer summry-btn ml-1"
+                        src="assets/images/mark.svg"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------Javascript Function -------------------------------- -->
+    <script>
+      function increment(value) {
+        document.getElementById(value).stepUp();
+      }
+      function decrement(value) {
+        document.getElementById(value).stepDown();
+      }
+      // Delete row function
+      function deleteRow(rowid) {
+        var row = document.getElementById(rowid);
+        var table = row.parentNode;
+        while (table && table.tagName != "TABLE") table = table.parentNode;
+        if (!table) return;
+        table.deleteRow(row.rowIndex);
+        // document.getElementById("scrollbar").className = "height: 0px;";
+        var x = (document.getElementById("scrollbar").className =
+          "height: 0px;");
+        x[0].innerHTML = "height: 0px;";
+      }
+      // Add new Row
+
+      function AddNewRow() {
+        var cat = document.getElementById("category").value;
+        var sub_cat = document.getElementById("sub_category").value;
+        let table = document.getElementById("mytable");
+        if (cat !== "" && sub_cat !== "") {
+          var row = table.insertRow(-1);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          var cell4 = row.insertCell(3);
+          var cell5 = row.insertCell(4);
+          var cell6 = row.insertCell(5);
+          var cell7 = row.insertCell(6);
+          var cell8 = row.insertCell(7);
+          cell1.classList.add("font-color-gray", "text-size-fourteen");
+          cell2.classList.add("font-color-gray", "text-size-fourteen");
+          cell3.classList.add("font-color-gray", "text-size-fourteen");
+          cell4.classList.add(
+            "table-button-padding-minus",
+            "bg-light-pink",
+            "rounded",
+            "pointer",
+            "m2-1"
+          );
+          cell5.classList.add(
+            "table-button-padding-minus",
+            "bg-light-pink",
+            "rounded",
+            "pointer"
+          );
+          cell6.classList.add(
+            "table-button-padding-minus",
+            "bg-light-pink",
+            "rounded",
+            "pointer"
+          );
+          cell7.classList.add("font-color-gray", "text-size-fourteen");
+          cell8.classList.add(
+            "table-button-padding-bin",
+            "bg-red",
+            "rounded",
+            "pointer"
+          );
+          cell1.innerHTML = cat;
+          cell2.innerHTML = sub_cat;
+          cell3.innerHTML =
+            '$85 <img class="table-button-padding-pen bg-light-green rounded pointer summry-btn ml-2 mb-1" src="assets/images/pen.svg">';
+          cell4.innerHTML =
+            '<img class="table-button-padding-minus bg-light-pink rounded pointer summry-btn mr-1" src="assets/images/minus.svg"><input class="table-input main-bg-color outline-noneoutline-none"type="number"placeholder="1" id="cm-incement-decrement1" min="0" max="100000"/><img class="ml-1 table-button-padding-plus bg-light-blue rounded pointer summry-btn"src="assets/images/plus.svg">';
+
+          let _tableBody_cm = document.getElementById("tableBody");
+          cell4.children[1].setAttribute(
+            "id",
+            "cm-incement-decrement" + _tableBody_cm.children.length
+          );
+          cell4.children[0].addEventListener("click", function () {
+            decrement("cm-incement-decrement" + _tableBody_cm.children.length);
+          });
+          cell4.children[2].addEventListener("click", function () {
+            increment("cm-incement-decrement" + _tableBody_cm.children.length);
+          });
+
+          cell5.innerHTML =
+            '<img class="mr-1 table-button-padding-minus bg-light-pink rounded pointer summry-btn"src="assets/images/minus.svg"><input class="table-input main-bg-color text-size-fourteen outline-none"type="number"placeholder="0"id="cm-incement-decrement2"min="0"max="100000"/><img  class="ml-1 table-button-padding-plus bg-light-blue rounded pointer summry-btn"src="assets/images/plus.svg">';
+
+          let _tableBody_quality = document.getElementById("tableBody");
+          cell5.children[1].setAttribute(
+            "id",
+            "cm-incement-decrement2" + _tableBody_quality.children.length
+          );
+          cell5.children[0].addEventListener("click", function () {
+            decrement(
+              "cm-incement-decrement2" + _tableBody_quality.children.length
+            );
+          });
+          cell5.children[2].addEventListener("click", function () {
+            increment(
+              "cm-incement-decrement2" + _tableBody_quality.children.length
+            );
+          });
+
+          cell6.innerHTML =
+            '<img class="mr-1 table-button-padding-minus bg-light-pink rounded pointer summry-btn"src="assets/images/minus.svg"><input  class="table-doller-width main-bg-color text-size-fourteen outline-none"type="number"placeholder="2.5 - 3 hrs"min="0"max="100000"/><img  class="ml-1 table-button-padding-plus bg-light-blue rounded pointer summry-btn"src="assets/images/plus.svg">';
+          cell7.innerHTML = "$212.5 - $255";
+          cell8.innerHTML =
+            '<img class="table-button-padding-bin bg-red rounded pointer summry-btn"src="assets/images/bin.svg"onclick="deleteRow(rowid)"/><img  class="table-button-padding-mark bg-green rounded pointer summry-btn ml-2"src="assets/images/mark.svg">';
+          cell8.children[0].setAttribute("id", "rowid");
+          cell8.children[0].addEventListener("click", function () {
+            deleteRow("rowid");
+          });
+          row.setAttribute("id", "rowid");
+        } else {
+          document.getElementById("popup").click();
+        }
+      }
+    </script>
+  </body>
+</html>
